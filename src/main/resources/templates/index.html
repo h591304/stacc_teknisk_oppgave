@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="https://thymeleaf.org">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <title>KYC-Check</title>
     </head>
     <header>
         <div class="header_txt">
-            <h2>KYC-Check</h2>
+            <h1>Pep-Check</h1>
         </div>
     </header>
     <body>
@@ -15,11 +16,11 @@
             <p>Write the name of a person you would want to pep-check.</p>
         </div>
 
-        <form action="search" method="post">
-            <label><b>Enter Name: </b>
-            <input type="text" id="name" placeholder="Name" name="person"></label> <br>
-            <input type="submit" value="Check">
-        </form><br>
-
+        <div class="container">
+            <form action="search" method="post">
+                <input type="text" id="name" placeholder="Enter Name" name="person" class="search-bar">
+                <input type="submit" value="Check" class="search-button">
+            </form><br>
+        </div>
     </body>
 </html>
