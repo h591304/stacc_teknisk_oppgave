@@ -20,7 +20,7 @@ public class GetInfo {
         Document doc = Jsoup.connect(webUrl + nameWithSpace).get();
 
         //henter og printer ut informasjon fra info seksjonen på google
-        Element resultData = doc.select("div[class=wDYxhc]").first();
+        Element resultData = doc.select("div[class=kno-rdesc]").first();
 
         return "Information from google search: " + resultData.text();
 
