@@ -4,11 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
 
 @Controller
-public class PepcheckController {
+public class PepcheckController{
 
     /**
      * håndterer root (/) og returnerer en startside
@@ -24,11 +25,11 @@ public class PepcheckController {
      * @return
      */
     @PostMapping("/search")
-    public static String userCheck(Model model) throws IOException {
-
-        String person = "knut hamsun";
+    public static String userCheck(Model model, @RequestParam(name = "person") String person)
+            throws IOException {
 
         String getCsv = GetCsv.getCsv(person);
+        System.out.println(getCsv);
         String googleInfo = GetInfo.getGoogleInfo(person);
 
         if(getCsv != null) {
@@ -38,8 +39,6 @@ public class PepcheckController {
         else {
             model.addAttribute("personInfo",
                     person + " is not flagged");
-            model.addAttribute("googleInfo"
-                    , "There aren't any results on " + person + "!");
         }
 
         return "info";
