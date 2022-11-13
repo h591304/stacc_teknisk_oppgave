@@ -29,7 +29,6 @@ public class PepcheckController{
             throws IOException {
 
         String getCsv = GetCsv.getCsv(person);
-        System.out.println(getCsv);
         String googleInfo = GetInfo.getGoogleInfo(person);
 
         if(getCsv != null) {

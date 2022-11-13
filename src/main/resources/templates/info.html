@@ -7,9 +7,13 @@
 <body>
     <h1 class="header_info">Pep-check</h1>
 
-    <p th:text="${personInfo}">Name</p>
-    <p th:text="${googleInfo}">GoogleInfo</p>
+    <div class="param">
+        <p th:text="${personInfo}">Name</p>
+        <p th:text="${googleInfo}">GoogleInfo</p>
+    </div>
 
-    <a href="/">Go Back</a>
+    <br><button class="start_page_button" onclick="window.location.href = '/';">
+        Go Back!
+    </button>
 </body>
 </html>
