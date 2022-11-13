@@ -39,7 +39,6 @@ public class PepcheckController{
             model.addAttribute("personInfo",
                     person + " is not flagged");
         }
-
         return "info";
     }
 

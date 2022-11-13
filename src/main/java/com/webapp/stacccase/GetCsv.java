@@ -11,7 +11,7 @@ public class GetCsv {
      * Metoden henter informasjonen fra pep.csv filen
      */
     public static String getCsv(String person) throws IOException {
-        String path = "C:\\Users\\larsm\\IdeaProjects\\stacccase\\pep.csv";
+        String path = "pep.csv";
         String personName = person.toUpperCase();
         int totalFlags = 0;
         //oppretter BufferedReader objekt for å lese pep.csv filen
