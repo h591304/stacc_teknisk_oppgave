@@ -11,16 +11,19 @@
     </header>
     <body>
 
-        <fieldset>
-            <div class="fst_text">
-                <p>Write the name of a person you would want to pep-check.</p>
-            </div>
-            <p><b>Enter Name: </b>
-            <input type="text" id="name" placeholder="Name"></p>
-            <p>google
-            <input type="checkbox"></p><br>
+        <div class="fst_text">
+            <p>Write the name of a person you would want to pep-check.</p>
+        </div>
+
+        <form action="search" method="post">
+            <label><b>Enter Name: </b>
+            <input type="text" id="name" placeholder="Name" name="person"></label> <br>
             <input type="submit" value="Check">
-        </fieldset>
+        </form><br>
+
+        <div class="google_txt">
+            <p></p>
+        </div>
 
     </body>
 </html>

@@ -11,9 +11,9 @@ public class GetInfo {
     /**
      * Metoden henter informasjon fra googlesøk om personen som skal pep-sjekkes
      */
-    public String getGoogleInfo(String customerName) throws IOException {
+    public static String getGoogleInfo(String personName) throws IOException {
         //Erstatter whitespaces i navnesøk med + for å få riktig google-url
-        String nameWithSpace = customerName.replace(' ', '+');
+        String nameWithSpace = personName.replace(' ', '+');
         String webUrl = "https://www.google.com/search?q=";
 
         //tar url og sender en HTTP request og parser resultatet ved bruk av Jsoup
@@ -21,8 +21,9 @@ public class GetInfo {
 
         //henter og printer ut informasjon fra info seksjonen på google
         Element resultData = doc.select("div[class=kno-rdesc]").first();
+        String resultInfo = resultData.text();
 
-        return "Information from google search: " + resultData.text();
+        return "Information from google search: " + resultInfo;
 
     }
 }
