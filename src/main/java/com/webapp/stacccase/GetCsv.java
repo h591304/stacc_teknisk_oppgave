@@ -3,6 +3,7 @@ package com.webapp.stacccase;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Locale;
 
 public class GetCsv {
 
@@ -12,7 +13,7 @@ public class GetCsv {
     public String getCsv(String customer) throws IOException {
         String path = "pep.csv";
         String customerData = "";
-        String customerName = customer.toUpperCase();
+        String customerName = customer.toLowerCase();
         int totalFlags = 0;
         //oppretter BufferedReader objekt for å lese pep.csv filen
         BufferedReader br =
@@ -24,7 +25,7 @@ public class GetCsv {
             String[] values = customerData.split(",");
             //sammenligner kundenavn med alle navnene i .csv filen for
             //treff på søk
-            if(customerName == values[2].toUpperCase()) {
+            if(customerName == values[2].toLowerCase()) {
                 customerData += " " + values[11] + ",";
                 totalFlags += 1;
             }
@@ -34,6 +35,7 @@ public class GetCsv {
         if(customerData != "") {
             return customerName + " is flagged " + totalFlags + " times";
         }
+        //dersom det ikke finnes noe treff på kunden, blir isje kunden flagged
         return  customerName + " is not flagged.";
     }
 }
