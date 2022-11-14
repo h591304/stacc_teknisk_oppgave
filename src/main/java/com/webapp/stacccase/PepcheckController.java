@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
 
+/**
+ * Controller-klassen for webapplikasjonen og ansvarlig for brukerinputs og henting av informasjon fra nettsider
+ */
 @Controller
 public class PepcheckController{
 

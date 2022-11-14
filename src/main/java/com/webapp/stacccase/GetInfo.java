@@ -22,6 +22,7 @@ public class GetInfo {
         //henter og printer ut informasjon fra info seksjonen på google
         Element resultData = doc.select("div[class=kno-rdesc]").first();
 
+        //dersom søket på en person har en info-seksjon i google, returnerer vi informasjonen
         if(resultData != null) {
             String resultInfo = resultData.text();
             return "Information from google search: " + resultInfo;

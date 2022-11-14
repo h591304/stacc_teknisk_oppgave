@@ -5,6 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Locale;
 
+/**
+ * Klasse for å
+ */
 public class GetCsv {
 
     /**
@@ -24,14 +27,14 @@ public class GetCsv {
             String[] values = personData.split(",");
             String nameValue = values[2].substring(1, values[2].length()-1).toUpperCase();
 
+            //Hvis parameternavnet er likt eller substring av navnet i .csv-filen, får personen et søketreff
             if(personName.equals(nameValue) ||
                     nameValue.contains(personName)) {
                 totalFlags += 1;
                 System.out.println(nameValue);
             }
         }
-        //Finnes ikke personen i .csv filen, er ikke personen flagget
-
+        //Blir ikke personen flagget, finnes h*n i pep.csv filen og kan dermed ikke hente noe informasjon
         if(totalFlags == 0) {
             return null;
         }
