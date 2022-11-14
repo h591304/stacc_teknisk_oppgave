@@ -22,10 +22,12 @@ public class GetInfo {
         //henter og printer ut informasjon fra info seksjonen på google
         Element resultData = doc.select("div[class=kno-rdesc]").first();
 
+        //returnerer informasjonen derosom det finnes informasjon om personen på google
         if(resultData != null) {
             String resultInfo = resultData.text();
             return "Information from google search: " + resultInfo;
         }
+        //returnerer null hvis ikke
         return null;
     }
 }

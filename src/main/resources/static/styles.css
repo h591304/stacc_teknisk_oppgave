@@ -52,6 +52,12 @@ body {
     background-color: #FF7733
 }
 
+.param {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
 .start_page_button {
     width: 5%;
     height: 43px;
