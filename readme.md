@@ -24,4 +24,4 @@ For informasjonshenting ved pep-check, implementerte jeg bare en metode for hent
 Som sagt i oppgavebeskrivelsen, valgte jeg å gjøre oppgave a), men hadde desverre ikke tid til å se på resten av oppgavene i helgen.
 
 ## Comments
-Jeg synes oppgaven var en interessant og spennende oppgave. Jeg har kun hatt et kurs i webapplikasjoner H2021 der vi brukte Servlets som jeg husker var ekstremt ineffektivt og knotete å holde på med. Jeg har med andre ord aldri vært borti Spring boot (eller jsoup) før og utnyttet dermed muligheten til å lære meg på veldig kort tid mens jeg gjennomførte denne casen. Jeg er alt i alt fornøyd og har lært masse nytt i prosessen.
+Jeg synes oppgaven var en interessant og spennende oppgave. Jeg har kun hatt et kurs i webapplikasjoner H2021 der vi brukte Servlets som jeg husker var ekstremt ineffektivt og knotete å holde på med. Jeg har med andre ord aldri vært borti Spring boot (eller jsoup) før og utnyttet dermed muligheten til å lære meg på veldig kort tid mens jeg gjennomførte denne casen. Jeg er alt i alt fornøyd og har lært masse nytt i prosessen. :)))
