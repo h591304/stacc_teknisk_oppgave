@@ -28,13 +28,19 @@ public class PepcheckController{
     public static String userCheck(Model model, @RequestParam(name = "person") String person)
             throws IOException {
 
+        //henter data fra getCsv og google informasjon og lagrer i to variabler
         String getCsv = GetCsv.getCsv(person);
         String googleInfo = GetInfo.getGoogleInfo(person);
 
+        /**
+         * legger til personinformasjon og antall søøketreff til model-objektet
+         * dersom personen er flagget
+         */
         if(getCsv != null) {
             model.addAttribute("personInfo", getCsv);
             model.addAttribute("googleInfo", googleInfo);
         }
+        //else dersom personen ikke er flagget
         else {
             model.addAttribute("personInfo",
                     person + " is not flagged");

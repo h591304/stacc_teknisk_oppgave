@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class GetCsv {
 
     /**
-     * Metoden henter informasjonen fra pep.csv filen
+     * Metoden sjekker om en person er flagget og hvor mange søketreff personen får
      */
     public static String getCsv(String person) throws IOException {
         String path = "pep.csv";
