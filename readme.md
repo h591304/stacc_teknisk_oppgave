@@ -1,29 +1,23 @@
-# Stacc code challenge
-> Please select template/languate that suits you.
-
+# Stacc_teknisk_oppgave
+Kodeoppgave til tekniks intervju H22
 
 ## Oppgavebeskrivelse
-Her kan beskrive hvilke oppgave(r) du har valgt å løse.
-> Bekriv prosjektet ditt kort.
+Jeg valgte oppgave a) der jeg skulle lage en webapplikasjon som lar brukeren se om personen er flagget (får søketreff) og utføre en pep-sjekk på personen og viser
+litt informasjon fra googlesøk (gitt at personen er flagget). 
 
 ## Hvordan kjøre prosjektet
-For eksempel ***yarn start***
-> Husk å pakke med alle avhengigheter!
+
+### Setup for egen datamaskin
+Requirements:
+  - minst Python3 (helst nyere)
+  - JDK 17 (kan ikke kjøre uten) For intellij kan versjonen endres i Files -> Project Structure -> Project -> New... under Project SDK. Her må java versjon 17 være installert et sted på maskinen.
+
+INSTRUKSJON FOR INTELLIJ: En jsoup.jar fil kreves og den kan lastes ned på datamaskin og lagt til File -> Project Structure -> Modules -> JARs or directories(+ tegn i midten i modules-tab) også finne stedet på maskinen .jar filen er lagret.
+
+For å kjøre applikasjonen, må StaccaseApplication kjøres og siden blir da tilgjenglig på http://localhost:8080/
 
 ## Kommentarer
-Noen spesielle valg du ønsker å beskrive/forsvare?
-> Eventuellt andre kommentarer / utfordringer?
-
----
-
-
-## Task description
-Here you can describe what tasks you decided to solve.
-> Please provide a short description of your project.
-
-## How to run
-For example ***yarn start***
-> Remember to package all dependencies!
+For informasjonshenting ved pep-check, implementerte jeg bare en metode for henting av informasjon fra google søk fordi jeg hadde ikke mer tid i helgen til å implementere scraping fra flere nettsider, men dette kan gjøres enkelt på isj- samme måte som jeg gjorde for google. Forstod også på oppgaven at informasjon skulle kun hentes fra nettsider dersom personen ble flagget.
 
 ## Comments
-Comments regaring design choices, decisions, or anything at all.
+Jeg synes oppgaven var interessant og spennende. Jeg har kun hatt et kurs i webapplikasjoner H21 der vi brukte servlets som jeg husker var ekstremt ineffektivt og knotete å holde på med. Jeg har med andre ord aldri vært borti Spring boot (eller jsoup) før og utnyttet dermed muligheten til å lære meg på kort tid mens jeg gjennomførte denne casen. Jeg er alt i alt fornøyd og har lært masse nytt i prosessen. :)))
