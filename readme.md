@@ -13,7 +13,7 @@ Requirements:
   - minst Python3 (helst nyere)
   - JDK 17 (kan ikke kjøre uten) For intellij kan versjonen endres i Files -> Project Structure -> Project -> New... under Project SDK. Her må java versjon 17 være installert et sted på maskinen.
 
-INSTRUKSJON FOR INTELLIJ: En jsoup.jar fil kreves og den kan lastes ned på datamaskin og lagt til File -> Project Structure -> Modules -> JARs or directories(+ tegn i midten i modules-tab) også finne stedet på maskinen du lagret .jar filen.
+INSTRUKSJON FOR INTELLIJ: En jsoup.jar fil kreves og den kan lastes ned på datamaskin og lagt til File -> Project Structure -> Modules -> JARs or directories(+ tegn i midten i modules-tab) også finne stedet på maskinen .jar filen er lagret.
 
 For å kjøre applikasjonen, må StaccaseApplication kjøres og siden blir da tilgjenglig på http://localhost:8080/
 
